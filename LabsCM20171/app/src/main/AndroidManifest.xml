@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ContactInfo" />
-        <activity android:name=".OtherInfo"></activity>
+        <activity android:name=".OtherInfo" />
     </application>
 
 </manifest>
