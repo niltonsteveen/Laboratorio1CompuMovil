@@ -18,7 +18,15 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         tools:ignore="UnusedAttribute"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
     <LinearLayout
+        android:id="@+id/linearLayoutNames"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -47,12 +55,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapSentences|textNoSuggestions"
+                android:nextFocusDown="@+id/editTextLastNames"
                 android:theme="@style/AppTheme.EditText"/>
 
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayoutLastName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -87,6 +97,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayoutSex"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -113,6 +124,7 @@
             android:paddingTop="30dp">
 
             <TextView
+                android:id="@+id/textViewSex"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sex"
@@ -122,6 +134,7 @@
                 android:textSize="@dimen/size_text"/>
         </android.support.design.widget.TextInputLayout>
         <RadioGroup
+            android:id="@+id/radioGroupSex"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -129,12 +142,13 @@
             android:paddingBottom="7dp"
             >
             <RadioButton
+                android:id="@+id/radioButtonMale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Hombre"
-
                 />
             <RadioButton
+                android:id="@+id/radioButtonFemale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mujer"
@@ -143,6 +157,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayoutDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -169,6 +184,7 @@
             android:paddingTop="30dp">
 
             <TextView
+                android:id="@+id/textViewDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/date"
@@ -179,6 +195,7 @@
 
         </android.support.design.widget.TextInputLayout>
         <Button
+            android:id="@+id/buttonCalendar"
             android:layout_width="62dp"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/calendar_plus"
@@ -187,7 +204,10 @@
 
     </LinearLayout>
 
+
+
     <LinearLayout
+        android:id="@+id/linearLayoutscholarship"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -225,14 +245,17 @@
 
 
         <Button
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:id="@+id/buttonValidate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/form_margin_top"
-            android:onClick="validate"
+            android:backgroundTint="@color/accent"
+            android:textColor="@color/letter"
             android:text="@string/next"/>
 
 
-
-
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
