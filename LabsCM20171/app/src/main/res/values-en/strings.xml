@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LabsCM20171</string>
+    <string name="activity_PersonalInfo">Personal Information</string>
+    <string name="name">Names</string>
+    <string name="lastName">Surnames</string>
+    <string name="sex">Gender:</string>
+    <string name="scholarship">School grade:</string>
+    <string name="next">Next</string>
+    <string name="activity_ContactInfo">Contact Information</string>
+    <string name="numberContact">Phone</string>
+    <string name="email">Email:</string>
+    <string name="country">Country</string>
+    <string name="cityName">City</string>
+    <string name="direction">Address</string>
+    <string name="activity_OtherInfo">Additional Information</string>
+    <string name="date">Birthdate:</string>
+    <string-array name="grados">
+        <item>Primary</item>
+        <item>High school</item>
+        <item>College</item>
+        <item>Other</item>
+        <item>Other1</item>
+    </string-array>
+</resources>

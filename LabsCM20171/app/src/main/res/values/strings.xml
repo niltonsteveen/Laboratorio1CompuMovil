@@ -19,5 +19,6 @@
         <item>Secundaria</item>
         <item>Universiad</item>
         <item>Otro</item>
+        <item>Other1</item>
     </string-array>
 </resources>
