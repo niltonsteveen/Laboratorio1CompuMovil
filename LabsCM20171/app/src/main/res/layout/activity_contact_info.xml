@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/numberContact"
             android:drawablePadding="16dp"
+            android:inputType="phone"
             />
     </LinearLayout>
     <LinearLayout
@@ -45,6 +46,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/email"
             android:drawablePadding="16dp"
+            android:inputType="textEmailAddress"
             />
     </LinearLayout>
 
@@ -53,12 +55,14 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
-        <EditText
+        <AutoCompleteTextView
+            android:id="@+id/campo_pais"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/flag"
             android:hint="@string/country"
-            android:drawablePadding="16dp"/>
+            android:drawablePadding="16dp"
+            android:completionThreshold="1" />
     </LinearLayout>
 
     <LinearLayout
@@ -66,15 +70,16 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
-        <EditText
-            android:drawableLeft="@drawable/city"
+        <AutoCompleteTextView
+            android:id="@+id/campo_ciudad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/city"
             android:hint="@string/cityName"
             android:drawablePadding="16dp"
-            />
-
+            android:completionThreshold="1" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -86,6 +91,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/direction"
             android:drawablePadding="16dp"
+            android:inputType="textNoSuggestions"
             />
     </LinearLayout>
     <LinearLayout
@@ -94,10 +100,10 @@
         android:layout_weight="1"
         android:orientation="horizontal">
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/next"
-
+            android:id="@+id/btnSiguiente2"
             />
     </LinearLayout>
 </LinearLayout>

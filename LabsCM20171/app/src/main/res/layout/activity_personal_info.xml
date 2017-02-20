@@ -248,13 +248,12 @@
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:id="@+id/buttonValidate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/accent"
             android:textColor="@color/letter"
-            android:text="@string/next"/>
-
+            android:text="@string/next"
+            android:id="@+id/btnSiguiente1"/>
 
         </LinearLayout>
     </ScrollView>

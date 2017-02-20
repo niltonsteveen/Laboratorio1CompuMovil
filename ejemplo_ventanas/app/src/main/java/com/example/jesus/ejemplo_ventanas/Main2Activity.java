@@ -1,13 +1,12 @@
-package co.edu.udea.compumovil.gr08_20171.lab1;
+package com.example.jesus.ejemplo_ventanas;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import android.view.View;
-        import android.widget.CheckBox;
-        import android.widget.LinearLayout;
+import android.widget.CheckBox;
+import android.widget.LinearLayout;
 
-public class OtherInfo extends AppCompatActivity {
+public class Main2Activity extends AppCompatActivity {
     LinearLayout rating;
     LinearLayout rating1;
     LinearLayout rating2;
@@ -17,7 +16,7 @@ public class OtherInfo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_other_info);
+        setContentView(R.layout.activity_main2);
 
         rating=(LinearLayout)findViewById(R.id.ratings);
         for(int i= 1; i<=5;i++){
