@@ -12,6 +12,9 @@
     <string name="country">País</string>
     <string name="cityName">Ciudad</string>
     <string name="direction">Direccion</string>
+    <string name="info_comple">Información Complementaría</string>
+    <string name="pasatiempos">Pasatiempos:</string>
+    <string name="mostrar">Mostrar</string>
     <string name="activity_OtherInfo">Información Complementaria</string>
     <string name="date">Fecha de Nacimiento:</string>
     <string-array name="grados">
@@ -19,6 +22,5 @@
         <item>Secundaria</item>
         <item>Universiad</item>
         <item>Otro</item>
-        <item>Other1</item>
     </string-array>
 </resources>

@@ -7,10 +7,13 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class ContactInfo extends AppCompatActivity {
 
     Button btnSiguiente;
+    EditText etTelefono,etCorreo_Elect,etPais,etCiudad,etDireccion;
+
     public static String[] paises_lati = {
             "Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador",
             "El Salvador", "Guayana Francesa", "Granada", "Guatemala", "Guayana", "Haití",
@@ -31,11 +34,23 @@ public class ContactInfo extends AppCompatActivity {
         setContentView(R.layout.activity_contact_info);
 
         btnSiguiente = (Button)findViewById(R.id.btnSiguiente2);
+        etTelefono = (EditText)findViewById(R.id.etTelefono);
+        etCorreo_Elect = (EditText)findViewById(R.id.etCorreo_Elect);
+        etPais = (EditText)findViewById(R.id.campo_pais);
+        etCiudad = (EditText)findViewById(R.id.campo_ciudad);
+        etDireccion = (EditText)findViewById(R.id.etDireccion);
 
         btnSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Bundle bundle = getIntent().getExtras();
                 Intent sig2 = new Intent(ContactInfo.this, OtherInfo.class);
+                sig2.putExtra("Info2",bundle.getString("Info").toString()
+                        +"\nTeléfono: "+etTelefono.getText().toString()
+                        +"\nCorreo electroníco: "+etCorreo_Elect.getText().toString()
+                        +"\nPaís: "+etPais.getText().toString()
+                        +"\nCiudad: "+etCiudad.getText().toString()
+                        +"\nDirección: "+etDireccion.getText().toString());
                 startActivity(sig2);
             }
         });

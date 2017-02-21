@@ -51,7 +51,7 @@
             app:hintTextAppearance="@style/AppTheme.FloatingLabel">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/editTextNames"
+                android:id="@+id/etNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapSentences|textNoSuggestions"
@@ -87,7 +87,7 @@
             app:hintTextAppearance="@style/AppTheme.FloatingLabel">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/editTextLastNames"
+                android:id="@+id/etApellidos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapSentences|textNoSuggestions"
@@ -184,7 +184,7 @@
             android:paddingTop="30dp">
 
             <TextView
-                android:id="@+id/textViewDate"
+                android:id="@+id/FechaNaci"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/date"
@@ -193,9 +193,18 @@
                 android:paddingRight="10dp"
                 android:textSize="@dimen/size_text"/>
 
+            <TextView
+                android:id="@+id/tvFechaNaci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/size_text"/>
+
         </android.support.design.widget.TextInputLayout>
         <Button
-            android:id="@+id/buttonCalendar"
+            android:id="@+id/btnFechaNacimiento"
             android:layout_width="62dp"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/calendar_plus"
@@ -237,7 +246,7 @@
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:textAlignment="center"
-                android:id="@+id/options_scholarship"
+                android:id="@+id/spEducacion"
                 />
         </android.support.design.widget.TextInputLayout>
 

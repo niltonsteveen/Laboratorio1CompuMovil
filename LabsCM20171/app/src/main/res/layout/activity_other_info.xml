@@ -5,173 +5,290 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info_comple"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pasatiempos"/>
+
     <LinearLayout
-        android:id="@+id/ratings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <CheckBox
-            android:id="@+id/star1"
-            style="?android:attr/starStyle"
-            android:tag="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
-        <CheckBox
-            android:id="@+id/star2"
-            style="?android:attr/starStyle"
-            android:tag="2"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/star3"
-            style="?android:attr/starStyle"
-            android:tag="3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
-        <CheckBox
-            android:id="@+id/star4"
-            style="?android:attr/starStyle"
-            android:tag="4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <CheckBox
-            android:id="@+id/star5"
-            style="?android:attr/starStyle"
-            android:tag="5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/leer"
+                    android:text="leer"
+                    android:tag="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star1"
+                    style="?android:attr/starStyle"
+                    android:tag="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star2"
+                    style="?android:attr/starStyle"
+                    android:tag="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star3"
+                    style="?android:attr/starStyle"
+                    android:tag="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star4"
+                    style="?android:attr/starStyle"
+                    android:tag="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star5"
+                    style="?android:attr/starStyle"
+                    android:tag="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ratings1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ratings1">
+
+                <CheckBox
+                    android:id="@+id/ver_tv"
+                    android:text="Ver TV"
+                    android:tag="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star1.3"
+                    style="?android:attr/starStyle"
+                    android:tag="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star2.3"
+                    style="?android:attr/starStyle"
+                    android:tag="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star3.3"
+                    style="?android:attr/starStyle"
+                    android:tag="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star4.3"
+                    style="?android:attr/starStyle"
+                    android:tag="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star5.3"
+                    style="?android:attr/starStyle"
+                    android:tag="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ratings2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ratings1">
+
+                <CheckBox
+                    android:id="@+id/bailar"
+                    android:text="Bailar"
+                    android:tag="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star1.4"
+                    style="?android:attr/starStyle"
+                    android:tag="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star2.4"
+                    style="?android:attr/starStyle"
+                    android:tag="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star3.4"
+                    style="?android:attr/starStyle"
+                    android:tag="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star4.4"
+                    style="?android:attr/starStyle"
+                    android:tag="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star5.4"
+                    style="?android:attr/starStyle"
+                    android:tag="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ratings3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ratings1">
+
+                <CheckBox
+                    android:id="@+id/cantar"
+                    android:text="cantar"
+                    android:tag="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star1.5"
+                    style="?android:attr/starStyle"
+                    android:tag="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star2.5"
+                    style="?android:attr/starStyle"
+                    android:tag="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star3.5"
+                    style="?android:attr/starStyle"
+                    android:tag="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star4.5"
+                    style="?android:attr/starStyle"
+                    android:tag="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star5.5"
+                    style="?android:attr/starStyle"
+                    android:tag="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ratings4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ratings1">
+
+                <CheckBox
+                    android:id="@+id/nadar"
+                    android:text="Nadar"
+                    android:tag="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star1.6"
+                    style="?android:attr/starStyle"
+                    android:tag="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star2.6"
+                    style="?android:attr/starStyle"
+                    android:tag="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star3.6"
+                    style="?android:attr/starStyle"
+                    android:tag="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star4.6"
+                    style="?android:attr/starStyle"
+                    android:tag="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/star5.6"
+                    style="?android:attr/starStyle"
+                    android:tag="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/ratings1"
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/ratings1">
+        android:text="@string/mostrar"
+        android:id="@+id/btnMostrar"
+        />
 
-        <CheckBox
-            android:id="@+id/star1.3"
-            style="?android:attr/starStyle"
-            android:tag="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star2.3"
-            style="?android:attr/starStyle"
-            android:tag="2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star3.3"
-            style="?android:attr/starStyle"
-            android:tag="3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star4.3"
-            style="?android:attr/starStyle"
-            android:tag="4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star5.3"
-            style="?android:attr/starStyle"
-            android:tag="5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ratings2"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/ratings1">
+        android:hint="Información"
+        android:id="@+id/tvInfo_contact"/>
 
-        <CheckBox
-            android:id="@+id/star1.4"
-            style="?android:attr/starStyle"
-            android:tag="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star2.4"
-            style="?android:attr/starStyle"
-            android:tag="2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star3.4"
-            style="?android:attr/starStyle"
-            android:tag="3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star4.4"
-            style="?android:attr/starStyle"
-            android:tag="4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star5.4"
-            style="?android:attr/starStyle"
-            android:tag="5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ratings3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/ratings1">
-
-        <CheckBox
-            android:id="@+id/star1.5"
-            style="?android:attr/starStyle"
-            android:tag="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star2.5"
-            style="?android:attr/starStyle"
-            android:tag="2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star3.5"
-            style="?android:attr/starStyle"
-            android:tag="3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star4.5"
-            style="?android:attr/starStyle"
-            android:tag="4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <CheckBox
-            android:id="@+id/star5.5"
-            style="?android:attr/starStyle"
-            android:tag="5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
 </LinearLayout>
